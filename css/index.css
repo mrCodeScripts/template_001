@@ -354,6 +354,23 @@ body {
   color: var(--main-text-color);
 }
 
+.form .form-signin-btn {
+  border: none;
+  outline: none;
+  background-color: var(--main-input-bg);
+  font-family: var(--main-font);
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform;
+}
+
+.form .form-signin-btn:hover {
+  transform: scale(0.98);
+}
+
 .show-pwd-switch > div svg {
   width: 100%;
   height: 100%;
@@ -539,4 +556,8 @@ body {
 
 .background-image-design {
   animation: show-opaque 2.5s 1;
+}
+
+.form .form-signin-btn {
+  animation: show-transformUp-opaque 1.7s 1;
 }
